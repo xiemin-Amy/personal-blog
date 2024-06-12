@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://xiemin-amy.github.io/img/404.jpg">
 <meta property="og:image" content="https://xiemin-amy.github.io/img/404.jpg">
 <meta property="article:published_time" content="2024-03-01T09:00:22.000Z">
-<meta property="article:modified_time" content="2024-06-12T13:43:27.036Z">
+<meta property="article:modified_time" content="2024-06-12T13:45:33.514Z">
 <meta property="article:author" content="Amy Xie">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://xiemin-amy.github.io/img/404.jpg">
@@ -69,7 +69,7 @@
 
 <!-- Variable -->
 <script>window.ASYNC_CONFIG = {"hostname":"xiemin-amy.github.io","author":"Amy Xie","root":"/","typed_text":["MCU工程师"],"theme_version":"2.2.2","theme":{"switch":true,"default":"style-light"},"favicon":{"logo":"log.svg","icon16":"log.svg","icon32":"log.svg","apple_touch_icon":"log.svg","webmanifest":"/site.webmanifest","visibilitychange":true,"hidden":"failure.ico","show_text":"(/≧▽≦/)咦！又好了！","hide_text":"(●—●)喔哟，崩溃啦！"},"i18n":{"placeholder":"搜索文章...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）","author":"本文作者：","copyright_link":"本文链接：","copyright_license_title":"版权声明：","copyright_license_content":"本博客所有文章除特别声明外，均默认采用 undefined 许可协议。","copy_success":"复制成功","copy_failure":"复制失败","open_read_mode":"进入阅读模式","exit_read_mode":"退出阅读模式","notice_outdate_message":"距离上次更新已经 undefined 天了, 文章内容可能已经过时。","sticky":"置顶","just":"刚刚","min":"分钟前","hour":"小时前","day":"天前","month":"个月前"},"swup":false,"plugin":{"flickr_justified_gallery":"https://unpkg.com/flickr-justified-gallery@latest/dist/fjGallery.min.js"},"icons":{"sun":"far fa-sun","moon":"far fa-moon","play":"fas fa-play","email":"far fa-envelope","next":"fas fa-arrow-right","calendar":"far fa-calendar-alt","clock":"far fa-clock","user":"far fa-user","back_top":"fas fa-arrow-up","close":"fas fa-times","search":"fas fa-search","reward":"fas fa-hand-holding-usd","user_tag":"fas fa-user-alt","toc_tag":"fas fa-th-list","read":"fas fa-book-reader","arrows":"fas fa-arrows-alt-h","double_arrows":"fas fa-angle-double-down","copy":"fas fa-copy"},"icontype":"font","highlight":{"plugin":"highlighjs","theme":true,"copy":true,"lang":true,"title":"default","height_limit":false},"toc":{"post_title":true},"live_time":{"start_time":"","prefix":"博客已萌萌哒运行 undefined 天"},"danmu":{"enable":false,"el":".trm-banner"}};</script>
-<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-06-12 21:43:27"};</script>
+<script id="async-page-config">window.PAGE_CONFIG = {"isPost":true,"isHome":false,"postUpdate":"2024-06-12 21:45:33"};</script>
 
 <!-- Theme mode css -->
 <link data-swup-theme rel="stylesheet" href="/css/index.css?v=2.2.2" id="trm-switch-style">
@@ -369,7 +369,7 @@
 <li>OLED液晶屏本地显示当前温湿度值和MQ4值。</li>
 <li>可以实现雨天自动关窗、非法闯入报警、MQ4超标自动报警并开窗，以及语音控制窗户的开关。<br>系统功能模块图如下：<br><img src="/2024/03/01/practical_demo/2.png" alt="image"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></li>
 </ol>
-<h1 id="二、系统硬件设计"><a href="#二、系统硬件设计" class="headerlink" title="二、系统硬件设计"></a>二、系统硬件设计</h1><h2 id="1-元器件选用"><a href="#1-元器件选用" class="headerlink" title="1.元器件选用"></a>1.元器件选用</h2><p>主要包含图中所示传感器，其中主控采用STM32F103RCT6，WIFI模块为ESP-01S模块，语音模块为ASRPRO离线语音识别模块（可以通过天问block进行图形化编程）<br><img src="/2024/03/01/practical_demo/show.png" alt="image"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<h1 id="二、系统硬件设计"><a href="#二、系统硬件设计" class="headerlink" title="二、系统硬件设计"></a>二、系统硬件设计</h1><h2 id="1-元器件选用"><a href="#1-元器件选用" class="headerlink" title="1.元器件选用"></a>1.元器件选用</h2><p>主要包含图中所示传感器，其中主控采用STM32F103RCT6，WIFI模块为ESP-01S模块，语音模块为ASRPRO离线语音识别模块（可以通过天问block进行图形化编程）<br><img src="/2024/03/01/practical_demo/1.png" alt="image"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
 <h2 id="2-Android功能界面展示"><a href="#2-Android功能界面展示" class="headerlink" title="2.Android功能界面展示"></a>2.Android功能界面展示</h2><p><img src="/2024/03/01/practical_demo/4.png" alt="image"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'><br>其中Android实现软硬件数据传输流程图见下图所示：<br><img src="/2024/03/01/practical_demo/3.png" alt="image"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
 <h1 id="三、系统程序流程设计"><a href="#三、系统程序流程设计" class="headerlink" title="三、系统程序流程设计"></a>三、系统程序流程设计</h1><p>在本系统中任务调度过程为：首先创建任务管理任务，管理任务创建其他子任务以后，就进行自身删除。其他六个任务中，同时会调用MQTT通信任务和语音控制任务，当这两个任务进入阻塞态时，系统将会同时调用水位监测任务、温湿度监测任务、MQ-4监测任务、非法闯入任务。当这四个任务进入阻塞态时，系统又会重新进行任务调度循环。<br>系统主程序流程图，如图所示<br><img src="/2024/03/01/practical_demo/5.png" alt="image"  data-tag='post-image' loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
 
